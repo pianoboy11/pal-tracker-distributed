@@ -23,7 +23,7 @@ public class App {
     ProjectClient projectClient(
         RestOperations restOperations,
         @Value("${registration.server.endpoint}") String registrationEndpoint
-    ) {//
+    ) {
         return new ProjectClient(restOperations, registrationEndpoint);
     }
 }
